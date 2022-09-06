@@ -1,6 +1,6 @@
 # Kakai >_
 
-### Beta Release v1.03
+### Beta Release v1.06
 
 Kakai standalone runnable server contains everything you need to create a full stack java application. Kakai handles dependency injection, http routing, data persistence and page data binding much like the jsp spec.
 
@@ -27,7 +27,7 @@ repositories {
 }
 
 dependencies {
-    implementation "io.kakai:kakai:1.03"
+    implementation "io.kakai:kakai:1.06"
 }
 ```
 
