@@ -1,0 +1,48 @@
+package io.kakai.model.web;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ElementComponent {
+    Component component;
+    Boolean hasFiles;
+
+    /**
+     * when request comes in
+     * we create a component to represent
+     * a form element, some form elements
+     * contain more than a single file
+     * thus the array list of components;
+     * we use this to create
+     * RequestComponents
+     */
+    List<Component> components;
+
+    public Component getComponent() {
+        return component;
+    }
+
+    public void setComponent(Component component) {
+        this.component = component;
+    }
+
+    public Boolean getHasFiles() {
+        return hasFiles;
+    }
+
+    public void setHasFiles(Boolean hasFiles) {
+        this.hasFiles = hasFiles;
+    }
+
+    public List<Component> getComponents() {
+        return components;
+    }
+
+    public void setComponents(List<Component> components) {
+        this.components = components;
+    }
+
+    public ElementComponent(){
+        this.components = new ArrayList<>();
+    }
+}

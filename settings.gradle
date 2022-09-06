@@ -1,0 +1,7 @@
+include "kakai"
+include "examples"
+include ":examples:security"
+include ":examples:polygon-crm"
+include ":examples:rest-endpoint"
+include ":examples:media-player"
+

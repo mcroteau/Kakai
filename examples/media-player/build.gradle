@@ -1,0 +1,19 @@
+plugins {
+    id 'application'
+}
+
+application{
+    mainClass.set("io.kakai.Main")
+}
+
+group 'io.kakai'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":kakai")
+}
+

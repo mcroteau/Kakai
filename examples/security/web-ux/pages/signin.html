@@ -1,0 +1,24 @@
+<kakai:authenticated>
+    Hello <kakai:user/>!
+    You are authenticated.
+    <a href="/signout">Signout</a>
+</kakai:authenticated>
+
+<kakai:guest>
+    <h1>Signin.</h1>
+    <form action="/authenticate" method="post">
+        <input type="text" name="user"/>
+        <input type="text" name="pass"/>
+        <input type="submit" name="Signin!"/>
+    </form>
+    <p><strong>Super User</strong><br/>
+        username : croteau.mike+uno@gmail.com<br/>
+        password : effort.
+    </p>
+    <p><strong>Basic User</strong><br/>
+        username : croteau.mike+dos@gmail.com<br/>
+        password : effort.
+    </p>
+</kakai:guest>
+
+Special instructions: ${instructions}
